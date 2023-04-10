@@ -1,6 +1,6 @@
 parsers: # array
 # - reg: ^.*$ 匹配所有订阅，或  - url: https://example.com/profile.yaml 指定订阅
-  - reg: [(pptiok2020.com)|(smallstrawberry.com)]
+  - reg: ^.*$
     # - url: https://apiv2.pptiok2020.com/apiv2/xh79cghfkbjvo2gn?clash=1
     # - url: https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=15b4d0c4d052242f5e509d381adacf6d
   
@@ -69,8 +69,6 @@ parsers: # array
 
         - name: 美国 
           type: select
-          url: http://www.gstatic.com/generate_204
-          interval: 3600
           proxies:
             - DIRECT
 
