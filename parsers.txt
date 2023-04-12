@@ -70,8 +70,6 @@ parsers: # array
 
         - name: 美国 
           type: select
-          url: http://www.gstatic.com/generate_204
-          interval: 3600
           proxies:
             - DIRECT
 
