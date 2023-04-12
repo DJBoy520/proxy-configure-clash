@@ -1,6 +1,7 @@
 parsers: # array
 # - reg: ^.*$ 匹配所有订阅，或  - url: https://example.com/profile.yaml 指定订阅
   - reg: ^.*$
+  # - reg: [(pptiok2020.com)|(smallstrawberry.com)]
     # - url: https://apiv2.pptiok2020.com/apiv2/xh79cghfkbjvo2gn?clash=1
     # - url: https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=15b4d0c4d052242f5e509d381adacf6d
   
@@ -145,6 +146,8 @@ parsers: # array
       # - IP-CIDR,8.41.4.0/24,Netflix,no-resolve
       # - PROCESS-NAME,v2ray,DIRECT
       prepend-rules: # 规则由上往下遍历，如上面规则已经命中，则不再往下处理
+        - DOMAIN-SUFFIX,djper.cn,PROXY
+        - DOMAIN-SUFFIX,bard.google.com,美国
         - DOMAIN-SUFFIX,bing.com,美国
         - DOMAIN-SUFFIX,openai.com,美国
         - RULE-SET,applications,DIRECT
